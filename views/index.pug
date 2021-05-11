@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  font(color='grey' size='10px' face="monospace") creator: #{creator} 
+  br
+  br
+   
+  a(href='/new') add new message
+  br
+
+  ul
+    each message in message_array
+      li
+        p <b>message:</b> #{message.text} <br/> <b>messenger:</b> #{message.user} <br/> <b>time:</b> #{message.added}
+    
+

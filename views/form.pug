@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    form(method='POST' action='/submit')
+        input#messageText(type='text' name='messageText' placeholder='message')
+        input#author(type='text' name='author' placeholder='author')
+        button.btn.btn-primary(type='submit') Submit
